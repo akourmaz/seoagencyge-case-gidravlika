@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://seoagency-case-gidravlika.vercel.app/sitemap.xml
+Sitemap: https://seoagencyge-case-gidravlika.vercel.app/sitemap.xml
