@@ -185,6 +185,17 @@
   ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:20px;top:18px;font-family:'JetBrains Mono',monospace;color:var(--em2);font-weight:700}
   ol.steps li strong{color:var(--ink)}
 
+  .more{margin-top:14px;border:1px solid rgba(16,185,129,.28);border-radius:18px;background:rgba(16,185,129,.04)}
+  .more summary{cursor:pointer;list-style:none;padding:16px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-weight:700}
+  .more summary::-webkit-details-marker{display:none}
+  .more summary::after{content:"";flex:none;width:10px;height:10px;border-right:2px solid var(--em2);border-bottom:2px solid var(--em2);transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+  .more[open] summary::after{transform:rotate(-135deg) translateY(-3px)}
+  .more summary:hover{color:var(--em2)}
+  .more-body{padding:4px 20px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px 28px}
+  .grp h3{font-family:'JetBrains Mono',monospace;font-weight:400;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--em);margin-bottom:8px}
+  .grp ul{list-style:none;display:grid;gap:6px}
+  .grp li{position:relative;padding-left:20px;font-size:15.5px;line-height:1.45;color:var(--ink2)}
+  .grp li::before{content:"";position:absolute;left:2px;top:.55em;width:7px;height:7px;border-radius:2px;background:var(--em);opacity:.8}
   figure{margin-top:20px}
   figure img{width:100%;max-width:540px;height:auto;border-radius:18px;border:1px solid rgba(255,255,255,.08);display:block}
   figcaption{margin-top:10px;font-size:14px;color:var(--ink3)}
@@ -270,6 +281,11 @@
       <li><strong>Яндекс Директ.</strong> SEO AGENCY.GE провело аудит и нашло, что «конверсии» в кабинете завышены в 8 раз микрокликами и показами в сетях. После чистки целей и площадок товарная кампания стала главным источником заявок: в сентябре реклама дала 84 из 153 форм на сайте.</li>
       <li><strong>Учёт денег.</strong> SEO AGENCY.GE построило для владельца воронку «заявка → счёт → оплата» и ежемесячный отчёт о прибыли. Так результат продвижения виден в оплатах, а не в кликах.</li>
     </ol>
+    <details class="more">
+      <summary><span>Ещё 33 работ, которые SEO AGENCY.GE сделало за эти 5 месяцев</span></summary>
+      <div class="more-body"><div class="grp"><h3>Сайт и каталог</h3><ul><li>Новое меню каталога слева</li><li>Плитка каталога: удобные касания на телефоне и ровная сетка</li><li>Убран дубль товаров в листингах, единая сетка во всех разделах</li><li>Починена корзина на мобильном</li><li>Чистая карточка товара без вкладок и скрытых блоков</li><li>Доставка, гарантии и разметка товара для поисковиков в карточке</li><li>Поиск по сайту с выдачей товаров</li><li>Хлебные крошки на страницах каталога</li><li>Экран «Заявка принята» после отправки формы</li><li>84 товара без категории привязаны к каталогу</li><li>Раздел Parker: хаб, серии F11 и F12, 10 моделей с ценой</li><li>Редиректы со старых адресов на новые</li><li>Новый футер с реквизитами компании</li><li>Политика конфиденциальности и согласие по 152-ФЗ в формах</li><li>Страница возврата</li><li>Единое правило доставки: Яндекс Доставка, OZON, Wildberries</li></ul></div><div class="grp"><h3>SEO и данные</h3><ul><li>Семантические ядра по брендам: Bosch Rexroth, Sauer-Danfoss, Parker, МГП, ГСТ</li><li>Схема разделов сайта: 14 корневых веток каталога</li><li>Карта сайта на штатном Yoast, старые карты убраны</li><li>Фид Google Merchant примерно на 1 000 товаров</li><li>База применимости: товар, техника и аналоги</li><li>Сертификаты ЕАЭС собраны по 574 товарам</li><li>Выгрузки Search Console и Вебмастера в рабочие таблицы</li><li>Исследование рынка гидромашин в России</li><li>Аудит конкурентов</li></ul></div><div class="grp"><h3>Реклама</h3><ul><li>Цели Метрики очищены от дублей и микрокликов</li><li>Мусорные площадки отключены в товарной кампании</li><li>Старая поисковая кампания пересобрана в 10 групп</li><li>Новые кампании под направления: орбитальные моторы Sauer-Danfoss и Parker</li><li>Отдельный лендинг под гидромотор OMR 200 с заявками в Telegram</li></ul></div><div class="grp"><h3>Продажи и учёт</h3><ul><li>Ежемесячный отчёт о прибыли для владельца</li><li>Дашборд тендеров по 44-ФЗ, пилот</li><li>Внутренний справочник по базе для менеджеров</li></ul></div></div>
+    </details>
+
   </section>
 
   <section id="vyvody">
