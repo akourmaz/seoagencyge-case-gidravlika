@@ -157,6 +157,28 @@
   tr.sec td{border-top:none;padding:16px 8px 2px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--em)}
   tr.sec + tr td{border-top:none}
   .src{margin-top:12px;font-size:14px;color:var(--ink3)}
+  @media (max-width:640px){
+    .panel{padding:4px 16px 6px;overflow:visible}
+    table{min-width:0}
+    thead{display:none}
+    table,tbody{display:block}
+    tbody tr{display:grid;grid-template-columns:1fr auto;column-gap:14px;row-gap:6px;padding:14px 0;border-top:1px solid var(--line)}
+    tbody tr.sec{display:block;border-top:none;padding:14px 0 0}
+    tr.sec + tr{border-top:none}
+    td{padding:0;border-top:none}
+    tr.sec td{display:block;padding:0}
+    td.k{grid-column:1;grid-row:1}
+    td.d{grid-column:2;grid-row:1;text-align:right;white-space:nowrap}
+    td.d small{white-space:normal;max-width:130px;margin-left:auto}
+    td:nth-child(2),td:nth-child(3){grid-column:1 / -1;font-size:15px;padding-left:64px;text-indent:-64px}
+    td:nth-child(2){grid-row:2}
+    td:nth-child(3){grid-row:3}
+    td:nth-child(2)::before,td:nth-child(3)::before{display:inline-block;width:64px;font-family:'JetBrains Mono',monospace;
+      font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink3)}
+    td:nth-child(2)::before{content:"Весна"}
+    td:nth-child(3)::before{content:"Сейчас"}
+    td:nth-child(2) br,td:nth-child(3) br{display:none}
+  }
 
   ol.steps{list-style:none;counter-reset:s;display:grid;gap:12px}
   ol.steps li{counter-increment:s;background:var(--glass);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:18px 20px 18px 64px;position:relative;color:var(--ink2)}
