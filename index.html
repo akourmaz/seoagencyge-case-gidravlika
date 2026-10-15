@@ -104,8 +104,24 @@
   .mark svg{width:22px;height:22px}
   .word b{display:block;font-weight:800;font-size:22px;letter-spacing:-.04em;line-height:1}
   .word span{display:block;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--ink3);margin-top:5px}
-  .method{font-weight:800;font-size:18px;letter-spacing:-.01em;text-transform:uppercase}
-  .method em{font-style:normal;color:var(--em2)}
+  .method{font-weight:800;font-size:20px;letter-spacing:-.01em;text-transform:uppercase;color:var(--ink);text-decoration:none;
+    white-space:nowrap;display:inline-flex;align-items:center;gap:8px;padding:6px 0;transition:filter .3s}
+  .method em{font-style:normal;color:var(--em2);
+    background:linear-gradient(100deg,#10b981 0%,#34d399 35%,#eafff6 50%,#34d399 65%,#10b981 100%);background-size:250% 100%;
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+    animation:shimmer 3.2s linear infinite}
+  .method .tg{width:18px;height:18px;flex:none;color:var(--em2);opacity:.75;transition:transform .3s,opacity .3s}
+  .method:hover,.method:focus-visible{filter:drop-shadow(0 0 14px rgba(52,211,153,.45))}
+  .method:hover .tg,.method:focus-visible .tg{opacity:1;transform:translate(2px,-2px)}
+  @keyframes shimmer{from{background-position:150% 0}to{background-position:-100% 0}}
+  @media (prefers-reduced-motion:reduce){.method em{animation:none;background-position:50% 0}}
+  @media (max-width:600px){
+    header{flex-wrap:nowrap}
+    .word{display:none}
+    .mark{width:34px;height:34px;border-radius:10px}
+    .mark svg{width:17px;height:17px}
+    .method{font-size:clamp(17px,5.6vw,22px)}
+  }
 
   .tag{display:inline-block;margin-top:40px;font-family:'JetBrains Mono',monospace;font-size:13px;letter-spacing:.12em;
     text-transform:uppercase;color:var(--em2);border:1px solid rgba(16,185,129,.35);border-radius:999px;padding:6px 14px;background:rgba(16,185,129,.06)}
@@ -177,7 +193,7 @@
     <span class="mark"><svg viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></svg></span>
     <span class="word"><b>SEO</b><span>Agency.ge</span></span>
   </a>
-  <div class="method">The <em>Kurmaz Method</em></div>
+  <a class="method" href="https://t.me/akourmaz" target="_blank" rel="noopener" title="Telegram @akourmaz" aria-label="The Kurmaz Method — Telegram @akourmaz"><span>The</span> <em>Kurmaz Method</em><svg class="tg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg></a>
 </header>
 
 <main>
