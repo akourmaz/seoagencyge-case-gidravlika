@@ -129,6 +129,8 @@
   h1 em{font-style:normal;color:var(--em2);text-shadow:0 0 30px rgba(52,211,153,.3)}
   .lead{margin-top:20px;font-size:clamp(18px,2.2vw,21px);color:var(--ink2);max-width:820px}
   .lead strong{color:var(--ink)}
+  .lead + .lead{margin-top:16px}
+  .lead .hl{color:var(--em2);font-weight:800;white-space:nowrap;text-shadow:0 0 24px rgba(52,211,153,.25)}
   .meta{margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:13px;color:var(--ink3)}
 
   .tiles{margin-top:36px;display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px}
@@ -149,7 +151,7 @@
   td{padding:12px 8px;vertical-align:top;border-top:1px solid var(--line);color:var(--ink2)}
   td.k{color:var(--ink);font-weight:600}
   td.k small,td.d small{display:block;font-weight:400;font-size:13px;color:var(--ink3);margin-top:2px;font-family:Manrope,sans-serif}
-  td strong{color:var(--ink)}
+  td strong{color:var(--ink);font-weight:800}
   td.d{font-family:'JetBrains Mono',monospace;color:var(--em2);font-weight:700}
   td.d.n{color:var(--ink)} td.d.w{color:var(--warn)}
   tr.sec td{border-top:none;padding:16px 8px 2px;font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--em)}
@@ -201,7 +203,8 @@
   <div class="tag">Кейс · B2B · промышленная гидравлика</div>
   <h1>Кейс SEO AGENCY.GE: заявки B2B-дистрибьютора гидравлики <em>×2,2 за 5 месяцев</em></h1>
 
-  <p class="lead"><strong>SEO AGENCY.GE</strong>, агентство Алексея Курмаза, за 5 месяцев увеличило число заявок дистрибьютора промышленной гидравлики с 71–95 до 208 в месяц. SEO AGENCY.GE работало по методу Курмаза (THE KURMAZ METHOD): сайт, SEO и Яндекс Директ ведутся как одна воронка, а результат меряется оплатами, а не визитами.</p>
+  <p class="lead"><strong>SEO AGENCY.GE</strong>, агентство Алексея Курмаза, за 5 месяцев увеличило число заявок дистрибьютора промышленной гидравлики <span class="hl">с&nbsp;71–95 до&nbsp;208 в&nbsp;месяц</span>.</p>
+  <p class="lead">Работали по <strong>THE KURMAZ METHOD</strong>: сайт, SEO и Яндекс Директ ведутся как одна воронка, а результат меряется оплатами, а не визитами.</p>
   <p class="meta">Апрель → сентябрь 2026 · опубликовано 15.10.2026</p>
 
   <div class="tiles">
@@ -220,12 +223,12 @@
       <thead><tr><th>Что</th><th>Весна 2026</th><th>Сейчас</th><th>Изменение</th></tr></thead>
       <tbody>
         <tr class="sec"><td colspan="4">Трафик</td></tr>
-        <tr><td class="k">Визиты в месяц<small>Метрика, все источники</small></td><td>март 3&nbsp;081, апрель 3&nbsp;015</td><td>август 5&nbsp;531, сентябрь 5&nbsp;432</td><td class="d">×1,8</td></tr>
-        <tr><td class="k">Визиты из поиска<small>Метрика</small></td><td>1&nbsp;130–1&nbsp;200</td><td>сентябрь 1&nbsp;831</td><td class="d">+50&nbsp;%<small>к октябрю 2025 +14&nbsp;%</small></td></tr>
-        <tr><td class="k">Визиты с рекламы<small>Метрика</small></td><td>1&nbsp;150–1&nbsp;440</td><td>3&nbsp;240–3&nbsp;770</td><td class="d">×2,8<small>товарная кампания</small></td></tr>
-        <tr><td class="k">Google, клики за 90 дней<small>Search Console</small></td><td>год назад 1&nbsp;032</td><td>1&nbsp;496</td><td class="d">+45&nbsp;%<small>позиция 23,5 → 11,5</small></td></tr>
+        <tr><td class="k">Визиты в месяц<small>Метрика, все источники</small></td><td>март 3&nbsp;081, апрель 3&nbsp;015</td><td>август 5&nbsp;531, <strong>сентябрь 5&nbsp;432</strong></td><td class="d">×1,8</td></tr>
+        <tr><td class="k">Визиты из поиска<small>Метрика</small></td><td>1&nbsp;130–1&nbsp;200</td><td><strong>сентябрь 1&nbsp;831</strong></td><td class="d">+50&nbsp;%<small>к октябрю 2025 +14&nbsp;%</small></td></tr>
+        <tr><td class="k">Визиты с рекламы<small>Метрика</small></td><td>1&nbsp;150–1&nbsp;440</td><td><strong>3&nbsp;240–3&nbsp;770</strong></td><td class="d">×2,8<small>товарная кампания</small></td></tr>
+        <tr><td class="k">Google, клики за 90 дней<small>Search Console</small></td><td>год назад 1&nbsp;032</td><td><strong>1&nbsp;496</strong></td><td class="d">+45&nbsp;%<small>позиция 23,5 → 11,5</small></td></tr>
         <tr class="sec"><td colspan="4">Заявки</td></tr>
-        <tr><td class="k">Формы на сайте<small>Метрика</small></td><td>март 92, апрель 154</td><td>август 159, сентябрь 153</td><td class="d">+66&nbsp;%<small>к марту</small></td></tr>
+        <tr><td class="k">Формы на сайте<small>Метрика</small></td><td>март 92, апрель 154</td><td>август 159, <strong>сентябрь 153</strong></td><td class="d">+66&nbsp;%<small>к марту</small></td></tr>
         <tr><td class="k">Заявки в месяц<small>учёт клиента, все каналы</small></td><td>март 71, май 95</td><td>август 190, <strong>сентябрь 208</strong></td><td class="d">×2,2–2,9</td></tr>
         <tr><td class="k">Счета</td><td>март 69, май 93</td><td>август 103, <strong>сентябрь 144</strong></td><td class="d">×1,5–2</td></tr>
         <tr class="sec"><td colspan="4">Деньги</td></tr>
